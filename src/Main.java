@@ -11,6 +11,7 @@ public class Main {
         int deliveryDays = calculatedeliveryDays(60);
         System.out.println("Потребуется дней: " + deliveryDays);
     }
+    //Задача 1
     public static void leapYear (int year) {
             if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println(year + " является високосным.");
@@ -19,7 +20,7 @@ public class Main {
             System.out.println(year + " не является високосным.");
             }
 }
-
+    //Задача 2
     public static void Device(int deviceType, int deviceYear) {
         if (deviceType != 1 && deviceType != 0) {
             throw new IllegalArgumentException("Wrong device type");
@@ -32,6 +33,7 @@ public class Main {
         String versionString = deviceYear > 2015 ? "полную" : "облегченную";
         System.out.printf ("Установите %s версию для %s по ссылке%n", versionString, osString);
     }
+    //Задача 3
     public static int calculatedeliveryDays(int deliveryDistance) {
         if (deliveryDistance <= 20) {
             return 1;
